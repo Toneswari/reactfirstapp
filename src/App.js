@@ -1,13 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {Greet}  from './components/Greet';
+import Welcome from './components/welcome';
+import Hello from './components/Hello';
+import Fruits from './components/Fruits';
+import Conditionalcomponent from './components/Conditionalcomponent';
+import Message from './components/Message';
+import Counter from './components/Counter';
+import Form from './components/Form';
 function App() {
+  const seatNumbers=[1,4,7];
+  const person={
+    name:"Toneswari",
+    message:"Hello",
+    seatNumbers:[1,4,7]
+  }
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Hello world
         </p>
         <a
           className="App-link"
@@ -17,7 +30,15 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      {/* <Greet></Greet> */}
+      {/* <Welcome></Welcome> */}
+      {/* <Hello person={person}/> */}
+      {/* <Fruits/> */}
+      {/* <Conditionalcomponent/> */}
+      {/* <Message/> */}
+      {/* <Counter/> */}
+      <Form/>
     </div>
   );
 }
